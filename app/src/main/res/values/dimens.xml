@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="item_card_margin">1dp</dimen>
+    <!--Margin of Card Views should be 8dp. However, Card Views on API < 21 draws shadow effect which took 2dp-->
+    <dimen name="card_margin_bottom">6dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="meIndicatorIdentifier">1dp</dimen>
+    <dimen name="collapsing_toolbar_height">376dp</dimen>
+    <dimen name="circles_height">328dp</dimen>
+    <dimen name="bottom_bar_height">56dp</dimen>
+    <dimen name="appbar_size_landscape_phone">113dp</dimen>
+    <dimen name="status_bar_height_default">24dp</dimen>
+    <dimen name="appbar_scroll_sensitivity">45dp</dimen>
+    <dimen name="fab_behavior_scroll_sensitivity">6dp</dimen>
+    <dimen name="default_bottom_sheet_peek_height">260dp</dimen>
+</resources>

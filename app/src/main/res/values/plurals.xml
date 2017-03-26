@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="member">
+        <item quantity="one">%s member</item>
+        <item quantity="other">%s members</item>
+    </plurals>
+    <plurals name="expense">
+        <item quantity="one">%s expense</item>
+        <item quantity="other">%s expenses</item>
+    </plurals>
+</resources>

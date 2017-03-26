@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleListButtonCard">
+        <attr name="showMoreButton" format="boolean" />
+        <attr name="titleText" format="string" />
+        <attr name="showTitle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CurrencySelector">
+        <attr name="currencyCodeTextAppearance" format="reference" />
+        <attr name="currencyIconVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckedTextView">
+        <attr name="text" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pepah.fakekb.MainActivity">
+
+    <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vAppBar"
+        style="@style/AppBar">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vToolbar"
+            style="@style/Layout.Toolbar"
+            android:theme="@style/Layout.Toolbar"
+            android:title="Payment"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/vScroll"
+        style="@style/Layout.Scroll"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout style="@style/Layout.Full">
+
+            <android.support.v7.widget.CardView
+                style="@style/Layout.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    style="@style/Layout"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="Type of payment" />
+
+                    <Spinner
+                        android:id="@+id/vSpinnerPaymentType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="8dp"
+                        android:prompt="@string/who_are_you" />
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginLeft="24dp"
+                        android:text="Account" />
+
+                    <Spinner
+                        android:id="@+id/vSpinnerAccounts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="8dp"
+                        android:prompt="@string/who_are_you" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/Layout.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    style="@style/Layout.Full"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/bank_account" />
+
+
+                    <LinearLayout
+                        android:id="@+id/vAccountNumberContainer"
+                        style="@style/Layout.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:weightSum="16">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/vAccountNumberPreCode"
+                            style="@style/Layout.TextInput"
+                            android:layout_width="0dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_weight="3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/vHeader">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/vPreCode"
+                                style="@style/EditText.WhiteUnderline"
+                                android:inputType="textPersonName"
+                                android:text="4200" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/TextView"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textSize="18sp" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/vAccountNumberCode"
+                            style="@style/Layout.TextInput"
+                            android:layout_width="0dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_weight="8">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/vCode"
+                                style="@style/EditText.WhiteUnderline"
+
+                                android:inputType="textPersonName"
+                                android:text="42000007" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/TextView"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:text="/"
+                            android:textSize="18sp" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/vAccountNumberBankCode"
+                            style="@style/Layout.TextInput"
+                            android:layout_width="0dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="24dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_weight="3">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/vBankCode"
+                                style="@style/EditText.WhiteUnderline"
+                                android:inputType="textPersonName"
+                                android:text="0800" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Layout.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/vAmountLayout"
+                            style="@style/Layout.TextInput"
+                            android:layout_width="0dp"
+
+                            android:layout_gravity="bottom"
+                            android:layout_weight="3">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/vAmount"
+                                style="@style/EditText.WhiteUnderline"
+                                android:layout_marginLeft="24dp"
+                                android:layout_marginRight="8dp"
+                                android:hint="Amount"
+                                android:inputType="textPersonName" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/vCurrency"
+                            style="@style/TextView"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="28dp"
+                            android:text="CZK" />
+
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/vDueDateLayout"
+                        style="@style/Layout.TextInput">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/vDueDate"
+                            style="@style/EditText.WhiteUnderline"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="24dp"
+                            android:hint="@string/due_date"
+                            android:inputType="textPersonName" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/vMessageLayout"
+                        style="@style/Layout.TextInput">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/vMessage"
+                            style="@style/EditText.WhiteUnderline"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="24dp"
+                            android:hint="Message to recipient"
+                            android:inputType="textPersonName" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/vButtonFinish"
+        style="@style/TextView.FinishButton"
+        android:layout_height="72dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/finish"
+        android:textAppearance="@style/BtnTextWhite" />
+</android.support.design.widget.CoordinatorLayout>

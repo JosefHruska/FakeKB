@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="payment_provider_kb" type="id"/>
+    <item name="payment_provider_qr_payment" type="id"/>
+</resources>

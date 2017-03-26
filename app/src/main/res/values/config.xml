@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_application_id" translatable="false">759245127588897</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb759245127588897</string>
+    <string name="dynamic_links_app_id" translatable="false">tu6jf</string>
+    <string name="web_app_domain" translatable="false">https://alpha.settleup.info</string>
+</resources>
