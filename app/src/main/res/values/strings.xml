@@ -241,4 +241,5 @@
     <string name="close">Close</string>
     <string name="fingerprint_reckognized">Fingerprint reckognized</string>
     <string name="fingerprint_unreckognized">Fingerprint unreckognized</string>
+
 </resources>
